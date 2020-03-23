@@ -10,7 +10,7 @@ use crate::component::Component;
 pub mod blueprints;
 pub mod chromosome;
 pub mod component;
-// pub mod operators;
+pub mod operators;
 pub mod vectors;
 
 pub type Phenotype = DiGraph<Expressed, Binding>;
