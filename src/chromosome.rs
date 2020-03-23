@@ -79,17 +79,6 @@ impl EgpChromosome {
 
         let output = Component::from_blueprint(&blueprints.output, blueprints.total_activities);
 
-        // half will have guessed constants, half will draw from new distribution
-        // let constants = if rng.gen_range(0., 1.) < 0.5 {
-        //     parameters.ga.constants.clone()
-        // } else {
-        //     EgpChromosome::constants_from_range(
-        //         parameters.ga.constants.len(),
-        //         0.,
-        //         parameters.ga.constants_range,
-        //     )
-        // };
-
         EgpChromosome { output, regular }
     }
 }
