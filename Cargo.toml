@@ -3,6 +3,13 @@ name = "egp"
 version = "0.1.0"
 authors = ["Jan Corazza <corazzajan@gmail.com>"]
 edition = "2018"
+license = "MIT"
+description = "Enzyme Genetic Programming library"
+homepage = "https://github.com/corazza/egp"
+repository = "https://github.com/corazza/egp"
+readme = "README.md"
+keywords = ["genetic", "evolution", "enzyme"]
+categories = ["science"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

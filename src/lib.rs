@@ -10,7 +10,7 @@ use crate::component::Component;
 pub mod blueprints;
 pub mod chromosome;
 pub mod component;
-pub mod operators;
+// pub mod operators;
 pub mod vectors;
 
 pub type Phenotype = DiGraph<Expressed, Binding>;
@@ -169,7 +169,7 @@ fn satisfy_weak(
 // only after no satifying limited expression can be found, and to include terminals
 // in distributions
 
-// this satisfies the bindings for a new node without children
+/// Satisfies the bindings for a new node without children
 fn satisfy(
     blueprints: &Blueprints,
     chromosome: &EgpChromosome,
@@ -254,7 +254,7 @@ fn satisfy(
     }
 }
 
-// whole graph, root
+/// Given blueprints and a chromosome, constructs a phenotype
 pub fn express(blueprints: &Blueprints, chromosome: &EgpChromosome) -> Phenotype {
     let input_bias = 0.5;
 
